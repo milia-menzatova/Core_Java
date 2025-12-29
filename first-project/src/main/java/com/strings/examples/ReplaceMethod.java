@@ -10,3 +10,4 @@ public class ReplaceMethod {
         System.out.println(str.replace("Selenium", "Playwright"));
     }
 }
+
