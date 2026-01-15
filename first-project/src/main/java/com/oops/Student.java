@@ -21,7 +21,7 @@ public class Student {
 
 
     public static void main(String[] args) {
-        // creating th object
+        // creating the object
         Student stu1 = new Student();
         //assigned some values to the variables in the run time
         stu1.rollnum = 1;
@@ -32,7 +32,6 @@ public class Student {
         //call methods
         stu1.displayAllValues();
         stu1.displayRollNum();
-
 
            }
 
