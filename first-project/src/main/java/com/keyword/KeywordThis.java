@@ -25,8 +25,6 @@ public class KeywordThis {
     }
 
 
-
-
     //methods
     void display(){
         System.out.println(x + "test");
