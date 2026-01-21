@@ -7,5 +7,10 @@ public class Test1 {
     public static void main(String[] args) {
         //String s = Test1.str;
         System.out.println(Test1.str.length());
+
+        System.out.print(1);
+        System.out.println();
+
+        Math.random();
     }
 }
