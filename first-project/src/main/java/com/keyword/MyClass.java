@@ -16,7 +16,7 @@ static int counter = 0;
 
 //static method
     static void displayCounter(){
-        System.out.println(counter);
+        System.out.println(counter + " static");
     }
 
 //nonstatic method
@@ -26,7 +26,7 @@ static int counter = 0;
 
 
     public static void main(String[] args) {
-        MyClass.displayCounter(); //do need to create the object --static
+        MyClass.displayCounter(); //do need to create the object --to call static
 
         //declare object for nonstatic
         MyClass obj1 = new MyClass();
@@ -36,6 +36,10 @@ static int counter = 0;
 
         //accessing static members
         displayCounter();
+
+        //to call nonstatic
+        obj1.displayInstanceNumber();
+        obj2.displayInstanceNumber();
 
 
     }
