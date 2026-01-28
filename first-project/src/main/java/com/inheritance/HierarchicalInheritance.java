@@ -30,5 +30,12 @@ public class HierarchicalInheritance {
         System.out.println(kid1.b);
         kid1.print();
 
+        child2 kid2 = new child2();
+        System.out.println(kid2.a);
+        kid2.display();
+
+        System.out.println(kid2.c);
+        kid2.present();
+
     }
 }

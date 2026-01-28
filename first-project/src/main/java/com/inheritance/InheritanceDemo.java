@@ -38,4 +38,6 @@ public class InheritanceDemo {
 2). Multi level inheritance - One parent --> child 1 --> child 2 --> child 3
 3). Hierarchy inheritance - One parent - multiple independent kids,  all child will be connected to one parent
 4). Multiple Inheritance - Multiple parent - single child
+   It is not possible using classes
+   It is possible using Interface
  */
