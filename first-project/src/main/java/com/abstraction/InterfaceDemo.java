@@ -18,6 +18,10 @@ public class InterfaceDemo implements Book{
     public void method1(){
         System.out.println("Abstract method code");
     }
+
+    void method4(String str){
+        System.out.println(str);
+    }
     public static void main(String[] args) {
       /*InterfaceDemo obj = new InterfaceDemo();
       obj.method1();
@@ -32,6 +36,8 @@ public class InterfaceDemo implements Book{
         bk.method1();
         bk.method2();
         Book.method3();
+        InterfaceDemo demo = new InterfaceDemo();
+        demo.method4("Milya");
 
     }
 }
