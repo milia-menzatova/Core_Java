@@ -8,10 +8,24 @@ interface FuncInteface{
          //need to use default key word or static
          System.out.println("Default method");
     }
+
+    default void method3(){
+        System.out.println("Default method 2");
+    }
+    static void method4(){
+        System.out.println("Static method 1");
+    }
+    static void method5(){
+        System.out.println("Static method 2");
+    }
 }
 
-public class FunctionalInterfaceDemo {
+public class FunctionalInterfaceDemo implements FuncInteface{
     public static void main(String[] args) {
+
+    }
+    @Override
+    public void method(){
 
     }
 }
