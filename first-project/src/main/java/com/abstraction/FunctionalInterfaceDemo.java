@@ -22,10 +22,15 @@ interface FuncInteface{
 
 public class FunctionalInterfaceDemo implements FuncInteface{
     public static void main(String[] args) {
-
+     FunctionalInterfaceDemo obj = new FunctionalInterfaceDemo();
+     obj.method();
+     obj.method2();
+     obj.method3();
+     FuncInteface.method4();
+     FuncInteface.method5();
     }
     @Override
     public void method(){
-
+        System.out.println("Abstract method - Functional Interface");
     }
 }
