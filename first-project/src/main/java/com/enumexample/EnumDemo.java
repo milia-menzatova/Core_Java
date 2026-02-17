@@ -5,6 +5,10 @@ public class EnumDemo {
     // Enum is a special class in Java that allows to defined predefined constants
     //Enum constants are public static final
     public static void main(String[] args) {
-        System.out.println(Week.MONDAY);
+       // System.out.println(Week.MONDAY);
+        for(Week day: Week.values()){
+            System.out.println(day);
+
+        }
     }
 }
