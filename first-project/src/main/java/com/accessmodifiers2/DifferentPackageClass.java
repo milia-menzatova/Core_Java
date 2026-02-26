@@ -5,8 +5,8 @@ import com.accessmodifiers.Student;
 public class DifferentPackageClass {
     public static void main(String[] args) {
         Student stu1 = new Student();
-        stu1.displayName();
-        System.out.println(stu1.name);
+        //stu1.displayName();
+        //System.out.println(stu1.name);
 
     }
 
