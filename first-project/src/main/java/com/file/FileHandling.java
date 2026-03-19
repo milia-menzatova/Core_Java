@@ -21,12 +21,23 @@ public class FileHandling {
 
          */
 
-        //Read the information from the file
-         File myFile = new File("Test.txt");
+        /*//Read the information from the file
+        // File myFile = new File("Test.txt");
         Scanner sc = new Scanner(myFile);
         while(sc.hasNextLine()){
             String line = sc.nextLine();
             System.out.println(line);
+
+         */
+
+        //Delete the file
+        File file = new File("Test.txt");
+        if(file.delete()){
+            System.out.println("File is deleted");
+        }
+        else {
+            System.out.println("File is not deleted");
+        }
         }
     }
-}
+
