@@ -31,8 +31,15 @@ public class ArrayListDemo {
         System.out.println(arrList);
 
         //Insert element at specific index
-        arrList.add(3, "Test");
+        arrList.add(3, "Test"); //index, value
         System.out.println(arrList);
+
+        //Modify at specific  index in ArrayList
+        arrList.set(4, "Modify"); //size, value
+        System.out.println(arrList);
+
+        //Retrieve the value at specific index
+        System.out.println(arrList.get(1));
 
 
     }
