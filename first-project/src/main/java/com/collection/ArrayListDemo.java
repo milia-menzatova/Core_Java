@@ -50,10 +50,29 @@ public class ArrayListDemo {
 
         */
         //2. - for each loop / Enhanced for loop
-        for(Object x:arrList){
-            System.out.println(x);
+        //for(Object x:arrList){
+          //  System.out.println(x);
+
+        //3 - Using Iterator - Java Collections
+        Iterator it = arrList.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
 
         }
+
+        //Checking ArrayList is Empty or not
+        System.out.println(arrList.isEmpty());
+
+        //Remove some elements from the array list
+        //[100, Milya, true, Test, Modify, null]
+
+        ArrayList list2 = new ArrayList();
+        list2.add("Test");
+        list2.add(null);
+        list2.add(100);
+
+        arrList.removeAll(list2);
+        System.out.println(arrList);
 
 
     }
