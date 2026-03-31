@@ -41,6 +41,20 @@ public class ArrayListDemo {
         //Retrieve the value at specific index
         System.out.println(arrList.get(1));
 
+        //Retrive all elements from Arraylits with Index
+
+       /* //1. - for loop
+        for(int i=0; i<=arrList.size()-1; i++){
+            System.out.println(arrList.get(i));
+        }
+
+        */
+        //2. - for each loop / Enhanced for loop
+        for(Object x:arrList){
+            System.out.println(x);
+
+        }
+
 
     }
 }
