@@ -74,6 +74,10 @@ public class ArrayListDemo {
         arrList.removeAll(list2);
         System.out.println(arrList);
 
+        //Remove all the elements from the ArrayList
+        arrList.clear();
+        System.out.println(arrList);
+
 
     }
 }
