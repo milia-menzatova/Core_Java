@@ -1,6 +1,7 @@
 package com.collection;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashMapDemo {
@@ -39,14 +40,23 @@ public class HashMapDemo {
         System.out.println(map.get(500));
 
         //Retrieve all the keys and values from the Hashmap
-        map.keySet();
-        map.values();
+        map.keySet(); //all keys
+        map.values(); //all values
         map.entrySet(); // will return both key and value
 
         System.out.println("-------------------");
         System.out.println(map.keySet());
         System.out.println(map.values());
         System.out.println(map.entrySet());
+
+        //Retrieving data from the Hash Map
+        //Using the for each loop
+        for(Integer k:map.keySet()){
+            System.out.println(k+ " "+map.get(k));
+        }
+
+        //Using Iterator
+       Iterator it =  map.entrySet().iterator();
 
     }
 }
