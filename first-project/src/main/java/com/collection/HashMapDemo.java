@@ -17,6 +17,8 @@ public class HashMapDemo {
         map.put(101, "Test"); //key and value
         map.put(500, "Java");
         map.put(102, null);
+        map.put(77, "Flower");
+        map.put(34,"100");
 
         System.out.println(map);
 
@@ -31,10 +33,20 @@ public class HashMapDemo {
         map.remove(101);
         System.out.println(map);
 
-        //Retriv evalue of an given key
+        //Retrieve evalue of  given key
 
         map.get(500);
         System.out.println(map.get(500));
+
+        //Retrieve all the keys and values from the Hashmap
+        map.keySet();
+        map.values();
+        map.entrySet(); // will return both key and value
+
+        System.out.println("-------------------");
+        System.out.println(map.keySet());
+        System.out.println(map.values());
+        System.out.println(map.entrySet());
 
     }
 }
