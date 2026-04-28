@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Set;
 
 public class ListDemo_2 {
     public static void main(String[] args) {
@@ -17,5 +18,15 @@ public class ListDemo_2 {
         */
 
         //remove / add are not supported, only we can update elements
+
+        Set<String> set2 = Set.of("Test", "Kumar");
+        System.out.println(set2);
+
+        /*set2.add("ALma");
+        System.out.println(set2);
+
+         */ // add, remove, not supported
+
+
     }
 }
