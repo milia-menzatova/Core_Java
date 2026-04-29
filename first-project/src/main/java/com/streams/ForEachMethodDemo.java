@@ -19,7 +19,8 @@ public class ForEachMethodDemo {
         for(int i:arr){
             System.out.println(i);
         }
-         */
+        */
+
 
     }
 
