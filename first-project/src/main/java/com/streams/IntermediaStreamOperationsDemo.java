@@ -29,10 +29,23 @@ public class IntermediaStreamOperationsDemo {
         Stream<Integer> sortedNumbers = nums4.stream().sorted();
         //sortedNumbers.forEach(n-> System.out.println(n));
 
-        //Sorted(Comparator) - Custom sorting (Ascending/Descending)
+        //Sorted(Comparator) - Custom sorting (Descending)
         List<Integer> nums5 = Arrays.asList(60, 90, 56, 3, 2, 89);
         Stream<Integer> Numbers = nums5.stream().sorted((a,b)->b-a);
-        Numbers.forEach(n-> System.out.println(n));
+       // Numbers.forEach(n-> System.out.println(n));
+
+        //Limit(n) - Take first n elements
+        List<Integer> nums6 = Arrays.asList(172, 787, 8, 6, 4, 89, 54);
+        Stream<Integer> firstFive = nums6.stream().limit(5);
+        //firstFive.forEach(n-> System.out.println(n));
+
+        //Skip(n)-Skip first n elements
+        List<Integer> nums7 = Arrays.asList(172, 787, 8, 6, 4, 89, 54);
+        Stream<Integer> skipValues = nums7.stream().skip(2);
+        skipValues.forEach(n-> System.out.println(n));
+
+
+
 
 
     }
