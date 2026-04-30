@@ -21,7 +21,19 @@ public class IntermediaStreamOperationsDemo {
         //Distinct() - remove duplicates
         List<Integer> num2 = Arrays.asList(1,1,1,1,1,5,7,7, 88);
         Stream<Integer>str3 = num2.stream().distinct();
-        str3.forEach(n-> System.out.println(n));
+        //str3.forEach(n-> System.out.println(n));
+
+
+        //Sorted() - Sort natural order (Ascending)
+        List<Integer> nums4 = Arrays.asList(60, 90, 56, 3, 2, 89);
+        Stream<Integer> sortedNumbers = nums4.stream().sorted();
+        //sortedNumbers.forEach(n-> System.out.println(n));
+
+        //Sorted(Comparator) - Custom sorting (Ascending/Descending)
+        List<Integer> nums5 = Arrays.asList(60, 90, 56, 3, 2, 89);
+        Stream<Integer> Numbers = nums5.stream().sorted((a,b)->b-a);
+        Numbers.forEach(n-> System.out.println(n));
+
 
     }
 }
