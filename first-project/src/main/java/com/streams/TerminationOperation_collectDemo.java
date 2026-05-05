@@ -2,6 +2,7 @@ package com.streams;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -21,6 +22,14 @@ public class TerminationOperation_collectDemo {
         Set<String> uniqueFruits = fruits.stream().distinct()
                 .collect(Collectors.toSet());
         System.out.println(uniqueFruits);
+
+        //collect as Map (key, value) - word, length of word
+        Map<String,Integer> map = fruits.stream()
+                .distinct()
+                .collect(Collectors.toMap(w->w,w->w.length()));
+        System.out.println(map);
+        //Output Apple=5, Kiwi=4, Mango=5, Orange=6, Banana=6}
+
 
     }
 }
