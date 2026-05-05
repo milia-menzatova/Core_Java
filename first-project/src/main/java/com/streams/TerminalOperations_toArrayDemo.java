@@ -11,5 +11,7 @@ public class TerminalOperations_toArrayDemo {
         String [] fruitArray = st.toArray(n-> new String[4]);
         System.out.println(Arrays.toString(fruitArray));
 
+
+
     }
 }
